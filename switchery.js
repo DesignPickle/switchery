@@ -145,7 +145,7 @@ Switchery.prototype.setPosition = function (clicked) {
     jack.style.left = 0;
     this.element.checked = false;
     this.switcher.style.boxShadow = 'inset 0 0 0 0 ' + this.options.secondaryColor;
-    this.switcher.style.borderColor = this.options.secondaryColor;
+    this.switcher.style.borderColor = this.options.borderColor || this.options.secondaryColor;
     this.switcher.style.backgroundColor = (this.options.secondaryColor !== defaults.secondaryColor) ? this.options.secondaryColor : '#fff';
     this.jack.style.backgroundColor = (this.options.jackSecondaryColor !== this.options.jackColor) ? this.options.jackSecondaryColor : this.options.jackColor;
     this.setSpeed();
